@@ -1,0 +1,94 @@
+<routes>
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="15" color="0,1,0" carFollowModel="IDM"/>
+
+    <route id="r_N_S" edges="end1_junction junction_end3"/>
+    <route id="r_N_L" edges="end1_junction junction_end2"/>
+    <route id="r_N_R" edges="end1_junction junction_end4"/>
+    <route id="r_S_N" edges="end3_junction junction_end1"/>
+    <route id="r_S_L" edges="end3_junction junction_end4"/>
+    <route id="r_S_R" edges="end3_junction junction_end2"/>
+    <route id="r_E_W" edges="end2_junction junction_end4"/>
+    <route id="r_E_L" edges="end2_junction junction_end3"/>
+    <route id="r_E_R" edges="end2_junction junction_end1"/>
+    <route id="r_W_E" edges="end4_junction junction_end2"/>
+    <route id="r_W_L" edges="end4_junction junction_end1"/>
+    <route id="r_W_R" edges="end4_junction junction_end3"/>
+
+    <!-- Custom Phase 1: Right Surge (0-200s) -->
+    <flow id="bg1_r_N_S" type="car" route="r_N_S" begin="0" end="200" probability="0.03" departLane="random"/>
+    <flow id="bg1_r_N_L" type="car" route="r_N_L" begin="0" end="200" probability="0.03" departLane="random"/>
+    <flow id="bg1_r_N_R" type="car" route="r_N_R" begin="0" end="200" probability="0.03" departLane="random"/>
+    <flow id="bg1_r_S_N" type="car" route="r_S_N" begin="0" end="200" probability="0.03" departLane="random"/>
+    <flow id="bg1_r_S_L" type="car" route="r_S_L" begin="0" end="200" probability="0.03" departLane="random"/>
+    <flow id="bg1_r_S_R" type="car" route="r_S_R" begin="0" end="200" probability="0.03" departLane="random"/>
+    <flow id="bg1_r_E_W" type="car" route="r_E_W" begin="0" end="200" probability="0.03" departLane="random"/>
+    <flow id="bg1_r_E_L" type="car" route="r_E_L" begin="0" end="200" probability="0.03" departLane="random"/>
+    <flow id="bg1_r_E_R" type="car" route="r_E_R" begin="0" end="200" probability="0.03" departLane="random"/>
+    <flow id="bg1_r_W_E" type="car" route="r_W_E" begin="0" end="200" probability="0.03" departLane="random"/>
+    <flow id="bg1_r_W_L" type="car" route="r_W_L" begin="0" end="200" probability="0.03" departLane="random"/>
+    <flow id="bg1_r_W_R" type="car" route="r_W_R" begin="0" end="200" probability="0.03" departLane="random"/>
+    <flow id="c1_N_R" type="car" route="r_N_R" begin="0" end="200" probability="0.35" departLane="random"/>
+    <flow id="c1_S_R" type="car" route="r_S_R" begin="0" end="200" probability="0.35" departLane="random"/>
+
+    <!-- Custom Phase 2: Straight Surge (200-400s) -->
+    <flow id="bg2_r_N_S" type="car" route="r_N_S" begin="200" end="400" probability="0.03" departLane="random"/>
+    <flow id="bg2_r_N_L" type="car" route="r_N_L" begin="200" end="400" probability="0.03" departLane="random"/>
+    <flow id="bg2_r_N_R" type="car" route="r_N_R" begin="200" end="400" probability="0.03" departLane="random"/>
+    <flow id="bg2_r_S_N" type="car" route="r_S_N" begin="200" end="400" probability="0.03" departLane="random"/>
+    <flow id="bg2_r_S_L" type="car" route="r_S_L" begin="200" end="400" probability="0.03" departLane="random"/>
+    <flow id="bg2_r_S_R" type="car" route="r_S_R" begin="200" end="400" probability="0.03" departLane="random"/>
+    <flow id="bg2_r_E_W" type="car" route="r_E_W" begin="200" end="400" probability="0.03" departLane="random"/>
+    <flow id="bg2_r_E_L" type="car" route="r_E_L" begin="200" end="400" probability="0.03" departLane="random"/>
+    <flow id="bg2_r_E_R" type="car" route="r_E_R" begin="200" end="400" probability="0.03" departLane="random"/>
+    <flow id="bg2_r_W_E" type="car" route="r_W_E" begin="200" end="400" probability="0.03" departLane="random"/>
+    <flow id="bg2_r_W_L" type="car" route="r_W_L" begin="200" end="400" probability="0.03" departLane="random"/>
+    <flow id="bg2_r_W_R" type="car" route="r_W_R" begin="200" end="400" probability="0.03" departLane="random"/>
+    <flow id="c2_N_S" type="car" route="r_N_S" begin="200" end="400" probability="0.35" departLane="random"/>
+    <flow id="c2_E_W" type="car" route="r_E_W" begin="200" end="400" probability="0.35" departLane="random"/>
+
+    <!-- Custom Phase 3: Left Surge (400-600s) -->
+    <flow id="bg3_r_N_S" type="car" route="r_N_S" begin="400" end="600" probability="0.03" departLane="random"/>
+    <flow id="bg3_r_N_L" type="car" route="r_N_L" begin="400" end="600" probability="0.03" departLane="random"/>
+    <flow id="bg3_r_N_R" type="car" route="r_N_R" begin="400" end="600" probability="0.03" departLane="random"/>
+    <flow id="bg3_r_S_N" type="car" route="r_S_N" begin="400" end="600" probability="0.03" departLane="random"/>
+    <flow id="bg3_r_S_L" type="car" route="r_S_L" begin="400" end="600" probability="0.03" departLane="random"/>
+    <flow id="bg3_r_S_R" type="car" route="r_S_R" begin="400" end="600" probability="0.03" departLane="random"/>
+    <flow id="bg3_r_E_W" type="car" route="r_E_W" begin="400" end="600" probability="0.03" departLane="random"/>
+    <flow id="bg3_r_E_L" type="car" route="r_E_L" begin="400" end="600" probability="0.03" departLane="random"/>
+    <flow id="bg3_r_E_R" type="car" route="r_E_R" begin="400" end="600" probability="0.03" departLane="random"/>
+    <flow id="bg3_r_W_E" type="car" route="r_W_E" begin="400" end="600" probability="0.03" departLane="random"/>
+    <flow id="bg3_r_W_L" type="car" route="r_W_L" begin="400" end="600" probability="0.03" departLane="random"/>
+    <flow id="bg3_r_W_R" type="car" route="r_W_R" begin="400" end="600" probability="0.03" departLane="random"/>
+    <flow id="c3_E_L" type="car" route="r_E_L" begin="400" end="600" probability="0.35" departLane="random"/>
+    <flow id="c3_W_L" type="car" route="r_W_L" begin="400" end="600" probability="0.35" departLane="random"/>
+
+    <!-- Custom Phase 4: Straight Surge (600-800s) -->
+    <flow id="bg4_r_N_S" type="car" route="r_N_S" begin="600" end="800" probability="0.03" departLane="random"/>
+    <flow id="bg4_r_N_L" type="car" route="r_N_L" begin="600" end="800" probability="0.03" departLane="random"/>
+    <flow id="bg4_r_N_R" type="car" route="r_N_R" begin="600" end="800" probability="0.03" departLane="random"/>
+    <flow id="bg4_r_S_N" type="car" route="r_S_N" begin="600" end="800" probability="0.03" departLane="random"/>
+    <flow id="bg4_r_S_L" type="car" route="r_S_L" begin="600" end="800" probability="0.03" departLane="random"/>
+    <flow id="bg4_r_S_R" type="car" route="r_S_R" begin="600" end="800" probability="0.03" departLane="random"/>
+    <flow id="bg4_r_E_W" type="car" route="r_E_W" begin="600" end="800" probability="0.03" departLane="random"/>
+    <flow id="bg4_r_E_L" type="car" route="r_E_L" begin="600" end="800" probability="0.03" departLane="random"/>
+    <flow id="bg4_r_E_R" type="car" route="r_E_R" begin="600" end="800" probability="0.03" departLane="random"/>
+    <flow id="bg4_r_W_E" type="car" route="r_W_E" begin="600" end="800" probability="0.03" departLane="random"/>
+    <flow id="bg4_r_W_L" type="car" route="r_W_L" begin="600" end="800" probability="0.03" departLane="random"/>
+    <flow id="bg4_r_W_R" type="car" route="r_W_R" begin="600" end="800" probability="0.03" departLane="random"/>
+    <flow id="c4_S_N" type="car" route="r_S_N" begin="600" end="800" probability="0.35" departLane="random"/>
+    <flow id="c4_W_E" type="car" route="r_W_E" begin="600" end="800" probability="0.35" departLane="random"/>
+
+    <!-- Random Background/Continuation (800-5000s) -->
+    <flow id="bg5_r_N_S" type="car" route="r_N_S" begin="800" end="5000" probability="0.08" departLane="random"/>
+    <flow id="bg5_r_N_L" type="car" route="r_N_L" begin="800" end="5000" probability="0.08" departLane="random"/>
+    <flow id="bg5_r_N_R" type="car" route="r_N_R" begin="800" end="5000" probability="0.08" departLane="random"/>
+    <flow id="bg5_r_S_N" type="car" route="r_S_N" begin="800" end="5000" probability="0.08" departLane="random"/>
+    <flow id="bg5_r_S_L" type="car" route="r_S_L" begin="800" end="5000" probability="0.08" departLane="random"/>
+    <flow id="bg5_r_S_R" type="car" route="r_S_R" begin="800" end="5000" probability="0.08" departLane="random"/>
+    <flow id="bg5_r_E_W" type="car" route="r_E_W" begin="800" end="5000" probability="0.08" departLane="random"/>
+    <flow id="bg5_r_E_L" type="car" route="r_E_L" begin="800" end="5000" probability="0.08" departLane="random"/>
+    <flow id="bg5_r_E_R" type="car" route="r_E_R" begin="800" end="5000" probability="0.08" departLane="random"/>
+    <flow id="bg5_r_W_E" type="car" route="r_W_E" begin="800" end="5000" probability="0.08" departLane="random"/>
+    <flow id="bg5_r_W_L" type="car" route="r_W_L" begin="800" end="5000" probability="0.08" departLane="random"/>
+    <flow id="bg5_r_W_R" type="car" route="r_W_R" begin="800" end="5000" probability="0.08" departLane="random"/>
+</routes>

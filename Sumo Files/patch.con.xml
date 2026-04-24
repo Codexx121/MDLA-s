@@ -1,0 +1,25 @@
+<connections>
+    <!-- end1_junction (North) -->
+    <connection from="end1_junction" to="junction_end2" fromLane="1" toLane="1" tl="junction" linkIndex="2"/>
+    <connection from="end1_junction" to="junction_end4" fromLane="1" toLane="1" tl="junction" linkIndex="0"/>
+    <connection from="end1_junction" to="junction_end3" fromLane="0" toLane="0" tl="junction" linkIndex="1"/>
+    <connection from="end1_junction" to="junction_end3" fromLane="2" toLane="2" tl="junction" linkIndex="1"/>
+    
+    <!-- end2_junction (East) -->
+    <connection from="end2_junction" to="junction_end3" fromLane="1" toLane="1" tl="junction" linkIndex="5"/>
+    <connection from="end2_junction" to="junction_end1" fromLane="1" toLane="1" tl="junction" linkIndex="3"/>
+    <connection from="end2_junction" to="junction_end4" fromLane="0" toLane="0" tl="junction" linkIndex="4"/>
+    <connection from="end2_junction" to="junction_end4" fromLane="2" toLane="2" tl="junction" linkIndex="4"/>
+    
+    <!-- end3_junction (South) -->
+    <connection from="end3_junction" to="junction_end4" fromLane="1" toLane="1" tl="junction" linkIndex="8"/>
+    <connection from="end3_junction" to="junction_end2" fromLane="1" toLane="1" tl="junction" linkIndex="6"/>
+    <connection from="end3_junction" to="junction_end1" fromLane="0" toLane="0" tl="junction" linkIndex="7"/>
+    <connection from="end3_junction" to="junction_end1" fromLane="2" toLane="2" tl="junction" linkIndex="7"/>
+    
+    <!-- end4_junction (West) -->
+    <connection from="end4_junction" to="junction_end1" fromLane="1" toLane="1" tl="junction" linkIndex="11"/>
+    <connection from="end4_junction" to="junction_end3" fromLane="1" toLane="1" tl="junction" linkIndex="9"/>
+    <connection from="end4_junction" to="junction_end2" fromLane="0" toLane="0" tl="junction" linkIndex="10"/>
+    <connection from="end4_junction" to="junction_end2" fromLane="2" toLane="2" tl="junction" linkIndex="10"/>
+</connections>
